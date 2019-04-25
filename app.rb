@@ -18,8 +18,8 @@ class App < Sinatra::Base
     phrase
   end
   
-  get '/reversename/:name' do
-    "#{params[:name].reverse}"
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    string= params[:word]
   end
   
   
