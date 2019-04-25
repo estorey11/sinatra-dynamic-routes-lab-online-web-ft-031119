@@ -33,7 +33,10 @@ class App < Sinatra::Base
     when "multiply"
       num1*num2
     when "divide"
-      num1num2
+      num1 / num2
+    else
+      "Error"
+    end
   end
   
   
