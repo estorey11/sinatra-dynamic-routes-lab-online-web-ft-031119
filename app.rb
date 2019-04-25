@@ -28,7 +28,8 @@ class App < Sinatra::Base
     case params[:operation]
     when "add"
       num1+num2 
-    when 
+    when "subtract"
+      num1-num2
   end
   
   
