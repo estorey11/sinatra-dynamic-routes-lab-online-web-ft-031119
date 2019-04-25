@@ -15,7 +15,7 @@ class App < Sinatra::Base
     params[:number].to_i.times do
       phrase << params[:phrase]
     end
-    "#{phrase}"
+    phrase
   end
   
   get '/reversename/:name' do
