@@ -11,9 +11,11 @@ class App < Sinatra::Base
   end
   
   get '/say/:number/:phrase' do
+    phrase=""
     params[:number].to_i.times do
-      "#{params[:phrase]}"
+      string << params[:phrase]
     end
+    string
   end
   
   get '/reversename/:name' do
